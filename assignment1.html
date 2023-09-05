@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assignment.css">
+  <title>BCA RESTAURENT</title>
+ 
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div id="logo">
+      <img src="food-talk-logo-vector-logo-template_57516-21.jpg" width="70" height="70" alt="MyFoodTalk.com" />
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#order">Order</a></li>
+      <li class="item"><a href="#Menu">Menu</a></li>
+      <li class="item"><a href="#Service">Services</a></li>
+      <li class="item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h1 class="h-primary">Welcome to Daily Food Talk</h1>
+    <p>
+      Best fast food in the city, no compromise with quality complete hygienic food.
+    </p>
+    <p>
+      Try once to place order click on below button.
+    </p>
+    <button class="btn">Order now</button>
+  </section>
+
+  <!-- menu  card-->
+  <section id="menu">
+    <h1 class="menuh1">Our Menu Card</h1>
+
+    <div id="menu_card">
+      <div class="menu1">
+        <img class="img_menu" src="pizza.jpg" alt="" />
+        <h2 class="menuh2">🍕 Pizza</h2>
+        <span style="font-size: 24px; font-weight: bold;">&#8377; 320</span>
+      </div>
+
+      <div class="menu1">
+        <img class="img_menu" src="burger.jpg" alt="" />
+        <h2 class="menuh2">🍔 Burger</h2>
+        <span style="font-size: 24px; font-weight: bold;">&#8377; 130</span>
+      </div>
+      <br>
+      <div class="menu1">
+        <br>
+        <img class="img_menu" src="sandwich.jpg" alt="" />
+        <h2 class="menuh2">🥪 Sandwich</h2>
+        <span style="font-size: 24px; font-weight: bold;">&#8377; 110</span>
+      </div>
+      <div class="menu1">
+        <img class="img_menu" src="chilli.jpg" alt="" />
+        <h2 class="menuh2">🥔Chilli Potato</h2>
+        <span style="font-size: 24px; font-weight: bold;">&#8377; 120</span>
+      </div>
+      <div class="menu1">
+        <img class="img_menu" src="coffee.jpg" alt="" />
+        <h2 class="menuh2">🍵 Coffee</h2>
+        <span style="font-size: 24px; font-weight: bold;">&#8377; 70</span>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+
+  <!-- our servces -->
+  <section id="services-container">
+    <h1 class="h1">Our services</h1>
+
+    <div id="services">
+      <div class="box1">
+
+        <img src="food-order.jpg" alt="" />
+        <h2 class="h2">Food Ordering</h2>
+        <p class="text center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          provident mollitia rem doloribus fugit aspernatur, dolore eius unde
+          corrupti.
+        </p>
+      </div>
+      <div class="box2">
+        <img src="food-cater.jpg" alt="" />
+        <h2 class="h2">Food Catering</h2>
+        <p class="text center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          provident mollitia rem doloribus fugit aspernatur, dolore eius unde
+          corrupti.
+        </p>
+      </div>
+      <div class="box3">
+        <marquee behavior="scroll" direction="right" onmouseover="this.stop();" onmouseout="this.start();">
+          <img src="food-deliverey.jpg" alt="" />
+        </marquee>
+        <h2 class="h2">Food Delivering</h2>
+
+        <p class="text center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          provident mollitia rem doloribus fugit aspernatur, dolore eius unde
+          corrupti.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+  <!-- contact us -->
+
+  <section id="contact">
+    <h1 class="contacth1">Contact us</h1>
+    <div id="contact-box">
+      <form action=""  class="contact-form" method="post">
+        <div class="form1">
+          <label for="name">Name</label>
+          <input type="text"  class="name" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form1">
+          <label for="email">Email</label>
+          <input type="email" class="email" name="name" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form1">
+          <label for="phone">Phone number</label>
+          <input type="phone" class="phone" name="name" id="phone" placeholder="Enter your Phone">
+        </div>
+        <div class="form1">
+          <label for="message">Message</label>
+          <textarea name="message" class="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <button class="Submit" type="submit">Submit</button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+  <!-- Review and view -->
+
+  <section id="review">
+    <div class="heading">
+      <img src="download.jpg" width="100" height="100" alt="">
+      <h3 class="h3">Review and View</h3>
+    </div>
+    <div class="textarea1">
+      
+      <textarea name="textarea" placeholder="leave a comment" id="addtxt" cols="50" rows="20"></textarea>
+      <br>
+      <button id="addbtn">submit</button>
+    </div>
+  
+    <hr>
+    <h1>Customer Review and View </h1>
+    <hr>
+
+    <div id="notes" class="row container-fluid style"> </div>
+
+
+
+  </section>
+
+  <script src="review.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>

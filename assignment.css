@@ -1,0 +1,526 @@
+*{
+    box-sizing: border-box;
+}
+
+/* navbar css */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    font-family: "Baloo Bhai 2", cursive;
+    top: 0px;
+    
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4; 
+  }
+  /* logo and image */
+  #logo {
+    margin: 6px 16px;
+  }
+  #logo img {
+    margin: 10px 9px;
+    height: 73px;
+    transition: all 1s ease-in-out;
+  }
+  #logo img:hover {
+    transform: scale(1.4) ;
+    cursor: pointer;
+    filter: invert(.9);
+  }
+  
+
+
+/* list item styling */
+#navbar ul {
+    display: flex;
+  }
+  #navbar ul li {
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  #navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 9px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+  }
+  #navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.3);
+    margin: 0px 25px;
+    font-weight: bold;
+  }
+/* home content */
+  #home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    height: 380px;
+  }
+
+  #home::before {
+    content: "";
+    position: absolute;
+    background: url(food-menu6.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 68%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  #home h1 {
+   
+    text-align: center;
+    font-family: "Bree Serif", serif;
+  }
+  #home p {
+    /* color: white; */
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Bree Serif", serif;
+  }
+  /* order button */
+  .btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+  }
+  .btn:hover {
+    color: blue;
+    background-color: white;
+    transform:scale(2);
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    padding: 3px;
+  }
+
+  /* services */
+
+  #services {
+    margin: 0px;
+    display: flex;
+    
+  }
+  #services .box1 {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #f1eeee;
+  }
+  #services .box2 {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #f1eeee;
+  }
+  #services .box3 {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #f1eeee;
+  }
+
+  #services .box1 img {  
+    display: block;
+    height: 160px;
+    margin: auto;
+    transition: all 1s ease-in-out;
+  }
+  #services .box1 img:hover {  
+    transform: scale(1.3);
+   }
+   #services .box2 img {  
+    display: block;
+    height: 160px;
+    margin: auto;
+    transition: all 1s ease-in-out;
+  }
+  #services .box2 img:hover {  
+   transform: scale(1.3);
+  }
+
+  #services .box3 img {  
+    display: block;
+    height: 160px;
+    margin: auto;
+    transition: all 1s ease-in-out;
+  }
+  #services .box3 img:hover{  
+   transform: rotate(360deg) scale(1.2);
+  }
+  #services .box p {
+    font-family: "Bree Serif", serif;
+  }
+  /* services class */
+ .h1{
+    font-family: "Bree Serif", serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+ }
+ .h2{
+    font-family: "Bree Serif", serif;
+    font-size: 2.3rem;
+    padding: 12px;
+ }
+
+ /* menu card */
+ #menu_card{
+  margin: 0px;
+  display: flex;
+  
+
+ }
+ #menu_card .menu1{
+  border: 2px solid brown;
+  padding: 40px;
+  margin: 3px 6px;
+  border-radius: 28px;
+  background-color: #f1eeee;
+  text-align: center;
+ }
+ #menu_card .menu1 img{
+  display: block;
+  width: 210px;
+  height: 180px;
+  margin: auto;
+  /* transition: all 1s ease-in-out; */
+ }
+ #menu_card .menu1:hover{
+   transform:scale(1.1);
+ }
+
+ /* menu card class */
+ .menuh1{
+  font-family: "Bree Serif", serif;
+  font-size: 3.8rem;
+  padding: 12px;
+  text-align: center;
+ }
+ .menuh2{
+  font-family: "Bree Serif", serif;
+  font-size: 2.3rem;
+  padding: 12px;
+ }
+
+ /* review and view */
+
+
+.card{
+  background:linear-gradient(135deg, blue,red,transparent);
+  padding: 1rem 1.5rem 1rem ;
+  width: 32rem;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+  margin: 1rem 2rem;
+  display: flex; 
+ flex-direction: column;
+  word-wrap: break-word; 
+ flex-wrap: wrap; 
+  
+ float: left; 
+width: 72%;
+
+
+  
+}
+.card p{
+  font-size: 1.3rem;
+}
+
+ #review{
+  margin: 30px 40px 50px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  
+
+  
+
+ } 
+
+
+/* heading h3 */
+.heading h3{
+   font-size: 29px;
+   font-weight: bold;
+}
+
+  .textarea1{
+  
+      border: 2px solid black;
+      /* background: url(review2.jpg ) no-repeat center center/cover; */
+      padding: 30px;
+      
+      border-radius: 10px;
+      background-color: blue;
+      width: 58%;
+      text-align: center;
+      margin-left: 25%; 
+
+  }
+
+  #addtxt{
+      margin-top: 32px;
+      border: 2px solid black;
+      padding: 5px;
+      border-radius: 16px;
+      border-color:red;
+
+
+  }
+
+  /* review and views */
+  #notes{
+       display: flex;
+       grid-column:inherit;
+       /* flex-direction: column; */
+       /* flex-wrap: wrap; */
+       font-size: 26px ;
+       font-family: sans-serif;
+       margin: 4px;
+       max-width: 450px;
+       position: relative;
+       float: right;
+       width: 25%;
+       
+      
+       
+  }
+  #notes::before{
+    background: linear-gradient(135deg,blue,yellow);
+  }
+
+  /* submit button */
+
+  #addbtn {
+      padding: 6px 20px;
+      border: 2px solid white;
+      background-color: brown;
+      color: white;
+      margin: 17px;
+      border-radius: 10px;
+      transition: all 1s ease-in-out;
+    }
+    #addbtn:hover {
+      color: blue;
+      background-color: white;
+      /* transform:scale(2); */
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      border: none;
+      padding: 3px;
+    }
+    /* 
+    delete button */
+
+    .delbtn {
+      padding: 6px 20px;
+      border: 2px solid white;
+      background-color: brown;
+      color: white;
+      margin: 17px;
+      border-radius: 10px;
+      transition: all 1s ease-in-out;
+    }
+    .delbtn:hover {
+      color: blue;
+      background-color: white;
+      /* transform:scale(2); */
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      border: none;
+      padding: 3px;
+    }
+
+ 
+     .heading img {
+      margin: 10px 9px;
+      height: 73px;
+      transition: all 1s ease-in-out;
+    }
+
+     .heading img:hover{
+     
+          transform: scale(1.4) ;
+          cursor: pointer;
+          filter: invert(.9);
+        
+    }
+
+   
+
+ /* contact */
+
+ #contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  background: url(contact.jpg) no-repeat center center/cover;
+}
+#contact-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 9px;
+  font-size: 1rem;
+   }
+   #contact-box form{
+       width: 40%;
+       
+   }
+   
+   #contact-box label{
+       font-size: 1.3rem;
+       font-family: "Bree Serif", serif;
+
+   }
+   .contacth1{
+     text-align: center;
+     font-size: 34px;
+   }
+
+/* submit button */
+   .Submit{
+    font-family: "Bree Serif", serif;  display: block;
+    margin-top: 34px;
+    margin-left: 100px;
+    padding:5px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 6px;
+    font: bold;
+    background-color: rgb(181, 223, 192);
+    color: blue;
+    transition: all 1s ease-in-out;
+  }
+  .Submit:hover{
+    transform: scale(1.5);
+    cursor:pointer;
+  }
+
+
+
+ 
+ @media  (max-width:700px){
+
+    #navbar{
+        flex-direction: column;
+    }
+    #navbar ul li a{
+    
+        font-size: 1rem;
+        padding: 0px 7px;
+    }
+    
+    
+    /* Home */
+    #home{
+    height: 313px;
+    padding: 2px 5px;
+    }
+
+    
+    #home p{
+        font-size: 13px;
+    }
+    
+    
+    /* Services */
+    
+    #services {
+            flex-direction: column;
+    
+        
+    }
+    
+    
+    /*  services class*/
+    .h1{
+        font-size: 26px;
+    }
+    #menu_card{
+      flex-direction: column;
+    }
+    .menuh1{
+      font-size: 26px;
+    }
+/* review and view */
+.textarea{
+  width: 88%;
+  margin-left: 23px;
+}
+    textarea#addtxt{
+      width: 100%;
+      margin: 3px;
+    }
+   #notes{
+     flex-direction: column;
+     
+   }
+   .card{
+     width: 258%;
+   }
+    
+}
+@media  (max-width:1120px){
+ #menu_card{
+   flex-wrap: wrap;
+   
+    flex-wrap: wrap;
+    width: 334px;
+    margin: 57px;
+}
+ #menu_card .menu1{
+  margin: 6px 14px;
+
+ }
+
+}
+
